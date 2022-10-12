@@ -12,7 +12,7 @@
       <h1 class="title">Hello from template file.</h1>
       <p class="description">Keeping track of the media I want to watch.</p>    
     </header>
-    <mw-media-item></mw-media-item>
+    <mw-media-item (delete)="onMediaItemDelete($event)" [mediaItem]="firstMediaItem"></mw-media-item>
   </section>
 </body>
 </html>
