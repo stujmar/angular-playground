@@ -11,7 +11,7 @@ export class MediaItemComponent {
   @Output() delete = new EventEmitter(); // can alias just like the input property, but it's not necessary
 
   onDelete() {
-    console.log('delete');
+    console.log('delete:', this.mediaItem.name);
     this.delete.emit(this.mediaItem);
   }
 }
