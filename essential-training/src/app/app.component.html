@@ -9,14 +9,10 @@
 <body>
   <section>
     <header>
-      <h1 class="title">Hello from template file.</h1>
-      <p class="description">Keeping track of the media I want to watch.</p>    
+      <h1>Media Watch List</h1>
+      <p class="description">Keeping track of the media I want to watch.</p>
     </header>
-    <mw-media-item 
-      *ngFor="let mediaItem of mediaItems"
-      (delete)="onMediaItemDelete($event)"
-      [mediaItem]="mediaItem">
-    </mw-media-item>
+    <mw-media-item-list></mw-media-item-list>
   </section>
 </body>
 </html>
